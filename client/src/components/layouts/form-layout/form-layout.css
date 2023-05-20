@@ -1,0 +1,24 @@
+.login-container {
+    background-color: var(--dark-overlay);
+    max-width: 450px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 50px 65px;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container.white-mode {
+    background-color: var(--light-white);
+}
+
+.login-container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-between;
+}

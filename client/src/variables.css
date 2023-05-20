@@ -1,0 +1,15 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-white: rgba(241, 241, 241, 0.85);
+    --light-white-secondary: #f8eeee;
+    --grey: #757575;
+    --dark-grey: #333333;
+    --red: #d62d30;
+    --light-overlay: rgba(29, 29, 29, 0.1);
+    --dark-overlay: rgba(0, 0, 0, 0.85);
+    --light-overlay-secondary: rgba(255, 255, 255, 0.1);
+    --dark-overlay-secondary: rgba(255, 255, 255, 0.75);
+    --grey-text: #8c8c8c;
+    --grey-text-secondary: #b3b3b3;
+}

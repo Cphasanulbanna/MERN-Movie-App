@@ -1,0 +1,112 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+}
+footer.white-mode {
+    background: var(--light-white-secondary);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+footer .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+footer .wrapper h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+footer .wrapper ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .wrapper ul li {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .wrapper ul li span.link {
+    font-size: 14px;
+    color: var(--grey);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer .wrapper ul li span.link:last-child {
+    margin-bottom: 0;
+}
+
+footer .wrapper ul li.logos {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .wrapper ul li.logos span.social-icon {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+footer .wrapper ul li.logos span:last-child {
+    margin-right: 0;
+}
+
+footer .wrapper ul li.first .language-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--dark-grey);
+    border-radius: 2px;
+    padding: 10px;
+    width: max-content;
+}
+
+footer .wrapper ul li.first .language-box .globe-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+
+footer .wrapper ul li.first .language-box .language {
+    margin-right: 12px;
+    color: var(--grey);
+    font-size: 14px;
+}
+
+footer .wrapper ul li.first .language-box .down-arrow {
+    cursor: pointer;
+}
+
+@media all and (max-width: 980px) {
+    footer .wrapper {
+        width: 85%;
+    }
+}
+
+@media all and (max-width: 680px) {
+    footer .wrapper ul {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    footer .wrapper ul li {
+        width: 45%;
+    }
+    footer .wrapper ul li.icons {
+        order: 3;
+    }
+    footer .wrapper ul li.third {
+        order: 4;
+    }
+}
+
+@media all and (max-width: 480px) {
+    footer .wrapper {
+        padding: 30px 10px;
+    }
+}

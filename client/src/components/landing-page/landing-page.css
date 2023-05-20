@@ -1,0 +1,14 @@
+#landing-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    background-image: url("../../assets//images//movie-bg.png");
+}
+
+@media all and (max-width: 480px) {
+    #landing-page {
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,30 @@
+.movie-list-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 20px 20px 0px 0px;
+    overflow-y: auto;
+    padding: 10px 0 40px;
+}
+
+.movie-list-box .movie {
+    background-color: #bdb7b7;
+    width: 18%;
+}
+
+.movie-list-box .movie.white-mode {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+@media all and (max-width: 1280px) {
+    .movie-list-box .movie {
+        width: 23%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .movie-list-box .movie {
+        width: 45%;
+    }
+}

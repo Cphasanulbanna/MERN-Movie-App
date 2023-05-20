@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+header .logo-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .logo-box .logo-image {
+    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+}
+
+header .logo-box .logo-text {
+    font-size: 32px;
+    color: var(--red);
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right .mode {
+    margin-right: 5px;
+    background: none;
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+header .right .mode.white-mode {
+    color: var(--white);
+}
+
+header .right button.white-mode {
+    color: var(--white);
+    background-color: var(--black);
+    outline: 1px solid var(--black);
+}
+
+header .right .logout {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 50px;
+    background: var(--black);
+    border: none;
+}
+header .right .logout.white-mode {
+    background: var(--white);
+}
+
+header .right .logout span {
+    font-family: "Roboto";
+    font-style: bold;
+    color: var(--white);
+}
+header .right .logout span.white-mode {
+    color: var(--black);
+}
+
+header .right .logout .profile {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+@media all and (max-width: 480px) {
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+        background: var(--dark-overlay);
+        padding: 30px;
+    }
+    header.white-mode {
+        background: var(--light-white);
+    }
+    header .logo-box .logo-image {
+        width: 36px;
+        height: 36px;
+    }
+    header .logo-box .logo-text {
+        display: none;
+    }
+    header .right button.logout span.text {
+        display: none;
+    }
+    header .right button.logout {
+        padding: 0;
+        height: unset;
+        outline: none;
+    }
+    header .right button.logout span.profile {
+        margin-left: 0;
+        width: 40px;
+        height: 40px;
+    }
+}
